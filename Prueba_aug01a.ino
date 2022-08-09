@@ -1,7 +1,7 @@
 #include "arduino_secrets.h"// Importar los datos con el que se conecta a Internet
 
 #include <DHTesp.h> //Una biblioteca Arduino para leer la familia DHT de sensores de temperatura y humedad.
-#include "thingProperties.h"// importar donde esta declarada las variables y funciones
+#include "thingProperties.h"// importar las variables de los componentes y funciones
 
 DHTesp dht; //Creamos una instancia de DHTesp
 
