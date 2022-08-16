@@ -56,10 +56,10 @@ void loop() {
 void onRelayBombaChange(){
 
   // va de 0 (muy mojado) a 5000 (muy seco)
-  if (relay_bomba || humedad_suelo>3500){
+  if (relay_bomba || humedad_suelo>3000){
     digitalWrite(relay_bomb, LOW); // Se prende
   } else {
-    if(humedad_suelo < 2500){
+    if(humedad_suelo < 1500){
        digitalWrite(relay_bomb, HIGH);// Se apaga   
     }
   }
@@ -69,7 +69,7 @@ void onRelayFocoChange(){
   if (relay_foco || temperatura<20){
     digitalWrite(relay_foc, LOW); // Se prende
   } else {
-    if(temperatura>=21){
+    if(temperatura>=24){
     digitalWrite(relay_foc, HIGH); // Se apaga
     }
   }
